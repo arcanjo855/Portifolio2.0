@@ -4,7 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
     background: #11111b;
+}
+
+
+html{
+    scroll-behavior: smooth;
 }
 
 
@@ -13,29 +21,9 @@
     width: 100%;
     height: 100vh;
 }
-
-html{
-    scroll-behavior: smooth;
-}
-
-
-p{
-    color: #7b7b7e;
-}
-h2{
-    color: #9332e5;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-    background: none;
-}
-
 /* navegação */
 
 .navegacao{
-    color: white;
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -106,6 +94,115 @@ a{
 .switch .switch-wrapper input:checked + .switch-button::before{
     transform: translateX(16px);
 }
+
+
+/* tema escuro */
+
+
+.escuro-bg{
+    background: #11111b;;
+}
+
+.escuro-bg a{
+    text-decoration: none;
+}
+
+.escuro-bg .navegacao-esquerda a{
+    color: white;
+}
+
+.escuro-bg .apresentacao-cima .apresentacao-cima-esquerda h1{
+    color: white;
+}
+
+.escuro-bg .apresentacao-cima .apresentacao-cima-esquerda h2{
+    color: #9332e5;
+}
+
+.escuro-bg .apresentacao-cima .apresentacao-cima-esquerda p{
+    color: #828282;
+}
+.escuro-bg .apresentacao-baixo h1{
+    color: white;
+}
+.escuro-bg .apresentacao-baixo p{
+    color: #828282;
+}
+
+.escuro-bg h1{
+    color: white;
+}
+
+.escuro-bg .habilidades-texto p{
+    color: #828282;
+}
+.escuro-bg .contatos-titulo{
+    color: white;
+}
+
+.escuro-bg .cotato-content p{
+    color: white;
+}
+
+
+
+
+
+
+
+/* tema claro */
+
+.claro-bg{
+    background: white;
+}
+
+.claro-bg .navegacao-esquerda a{
+    color: black;
+}
+
+.claro-bg .apresentacao-cima .apresentacao-cima-esquerda h1{
+    color: black;
+}
+.claro-bg .apresentacao-cima .apresentacao-cima-esquerda h2{
+    color: black;
+}
+.claro-bg .apresentacao-cima .apresentacao-cima-esquerda p{
+    color: black;
+}
+.claro-bg .apresentacao-baixo h1,p{
+    color: black;
+}
+
+.claro-bg .apresentacao-baixo p{
+    color: black;
+}
+
+.claro-bg .habilidades-titulo{
+    color: black;
+}
+
+.claro-bg .container-direita p{
+    color: black;
+}
+
+
+.claro-bg .projetos-titulo h1{
+    color: black;
+}
+
+
+.claro-bg .contatos-titulo{
+    color: black;
+}
+
+.claro-bg .cotato-content p{
+    color: black;
+}
+
+
+
+
+
 .navegacao-esquerda li a:hover{
     cursor: pointer;
     color: yellow;
@@ -113,9 +210,13 @@ a{
 
 
 
+
+
+
 /* apresentaçao */
+
+
 .apresentacao{
-    color: white;
     display: block;
 }
 
@@ -141,10 +242,6 @@ a{
 
 }
 
-.animacaDigitando{
-    animation: piscandoCursor 1400ms infinite normal, digitando 4s steps(35) 1s normal;
-}
-
 
 
 
@@ -156,19 +253,20 @@ a{
     margin-right: 100px;
 }
 
-.apresentacao button{
-    color: white;
+.apresentacao button{ 
     width: 150px;
     height: 40px;
     border-radius: 30px;
 }
 
 .botao-baixar{
+    color: white;
     border: none;
     background: #9332e5;
 }
-.botao-contato{
-    border: 0.1px solid #9332e5;
+.botao-linkedin{
+    color: #9332e5;
+    border: none;
 }
 
 .apresentacao-img{
@@ -300,25 +398,34 @@ a{
 
 /* Contato */
 
+
+
+
+.contato h3{
+    display: flex;
+    padding-top: 200px;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+}
+
 .cotato-content{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 400px;
+    padding-top: 200px;
     gap: 100px;
 }
 
 .contato-container {
-    border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: nowrap;
     align-items: center;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     text-align: center;
-
 }
 
 .p1{
@@ -326,9 +433,12 @@ a{
 }
 
 
+
 .cotato-content img{
-    width: 60px;
-    height: 60px;
+    background: #11111b;
+    border-radius: 15px;
+    width: 70px;
+    height: 70px;
 }
 
 
@@ -344,7 +454,6 @@ a{
 /* Rodape */
 
 .rodape{
-    margin-top: 200px;
     background: #29293d;
     color: white;
     height: 100px;
@@ -357,7 +466,7 @@ a{
 
 
 .rodape-list ul li{
-    color: var(--white-color);
+    color: white;
     list-style: none;
     background: #29293d;
 }
@@ -402,6 +511,10 @@ a{
     }
 }
 
+
+.animacaDigitando{
+    animation: piscandoCursor 1400ms infinite normal, digitando 4s steps(35) 1s normal;
+}
 
 [data-anime]{
     opacity: 0;

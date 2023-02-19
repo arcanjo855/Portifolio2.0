@@ -36,6 +36,26 @@ window.addEventListener("scroll",()=>{
 
 
 
+const classeTema = document.querySelectorAll('.trocar-bg')
+
+const trocarTemaClaro = () =>{
+    classeTema.forEach((element) =>{
+      element.classList.toggle('claro-bg')
+    })
+
+}
+
+const trocarTemaEscuro = () =>{
+  classeTema.forEach((element)=>{
+    element.classList.toggle('escuro-bg')
+  })
+}
+
+const checkedButton = document.querySelector('#checktema')
+
+checkedButton.addEventListener('change',()=>{
+  trocarTemaClaro()
+})
 
 
 const inserirTextoHabilidades = (id,description) =>{

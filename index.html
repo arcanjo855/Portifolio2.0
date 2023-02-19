@@ -10,7 +10,7 @@
 <body>
 
 
-    <nav class="navegacao">
+    <nav class="navegacao escuro-bg trocar-bg">
         <div class="navegacao-esquerda">
             <ul>
                 <li><a href="#apresentacao">Inicio</a></li>
@@ -23,7 +23,7 @@
         <div class="navegacao-direita">
             <label class="switch" >
             <div class="switch-wrapper">
-                <input type="checkbox">
+                <input type="checkbox" id="checktema">
                 <span class="switch-button"></span>
             </div>
             </label>
@@ -31,15 +31,18 @@
 
     </nav>
 
-    <section class="apresentacao main-content" id="apresentacao">
+
+
+
+    <section class="apresentacao main-content escuro-bg trocar-bg" id="apresentacao">
         <div class="apresentacao-cima">
-            <span class="apresentacao-cima-esquerda ">
+            <span class="apresentacao-cima-esquerda">
                 <h1 class="animacaDigitando">Ola, sou o</h1>
                 <h2 class="meu-nome animacaDigitando">Rafael Arcanjo :)</h2>
                 <p>Desenvolvedor Junior</p>
                 <span class="apresentacao-cima-botoes">
                     <a href="./assets/arquivos/Currículo-Rafael-Arcanjo.pdf" download="Currículo-Rafael-Arcanjo.pdf" type="application/pdf"><button class="botao-baixar">Baixar CV</button></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/rafael-arcanjo/" ><button class="botao-contato">Linkedin</button></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/rafael-arcanjo/" ><button class="botao-linkedin">Linkedin</button></a>
                 </span>               
             </span>
             <span><img src="./assets/img/rafaringa.png" class="apresentacao-img"></span>
@@ -54,8 +57,11 @@
         </div>
     </section>
     
-    <section class="habilidades main-content" id="habilidades" data-anime="left">
-        <h1>Habilidades</h1>
+
+
+
+    <section class="habilidades main-content escuro-bg trocar-bg" id="habilidades" data-anime="left">
+        <h1 class="habilidades-titulo">Habilidades</h1>
         <div class="habilidades-texto">
             <div class="container-esquerda">
                 <div class="habilidade-img" id="html-icon">
@@ -82,7 +88,7 @@
     </section>
 
 
-    <section class="projetos main-content" id="projetos" data-anime="left">
+    <section class="projetos main-content escuro-bg trocar-bg" id="projetos" data-anime="left">
         <div class="projetos-titulo">
             <h1>Projetos</h1>
         </div>
@@ -101,9 +107,9 @@
 
 
 
-    <section class="contato main-content" id="contato" data-anime="left">
+    <section class="contato main-content escuro-bg trocar-bg" id="contato" data-anime="left">
+        <h3 class="contatos-titulo">Contatos</h3>
         <div class="cotato-content">
-
             <a href="mailto:rafaelarcanjo129@hotmail.com" target="_blank">
             <div class="contato-container">
                 <img src="./assets/img/mail-icon.svg">
@@ -116,7 +122,7 @@
             <div class="contato-container">
                 <img src="./assets/img/fone-icon.png">
                 <p class="p1">Telefone</p>
-                <p>(11)95719-0887</p>
+                <p>(11) 95719-0887</p>
             </div>
             </a>
 
@@ -139,7 +145,7 @@
     </section>
 
 
-    <footer class="rodape">
+    <footer class="rodape escuro-bg trocar-bg">
         <div class="rodape-list">
             <ul>
                 <li>E-mail para contato: rafaelarcanjo129@hotmail.com</li>
