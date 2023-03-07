@@ -242,7 +242,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 100px 200px 100px 200px;
+    padding: 100px 200px 50px 200px;
     font-size: 40px;
 }
 
@@ -402,7 +402,7 @@ body{
     color: white;
     padding-top: 100px;
     padding-bottom: 10px;
-    height: 950px;
+    min-height: 950px;
     min-width: 100%;
 }
 
@@ -410,6 +410,7 @@ body{
 
 .projetos-titulo{
     display: flex;
+    align-items: center;
     justify-content: center;
     font-family: 'Bayon', sans-serif;
     font-size: 30px;
@@ -560,4 +561,39 @@ body{
 [data-anime].animate{
     opacity: 1;
     transform: translate3d(0,0,0);
+}
+
+
+
+
+
+@media (max-width:1150px) {
+    .apresentacao{
+        min-width: 200vh;
+    }
+    .habilidades{
+        min-width: 200vh;
+    }
+    .projetos{
+        min-width: 200vh;
+    }
+    .contato{
+        min-width: 200vh;
+    }
+    .rodape{
+        min-width: 200vh;
+    }
+}
+
+
+@media (max-width:800px) {
+    .apresentacao-baixo{
+        font-size: 30px;
+    }
+    .container-direita p{
+        font-size: 30px;
+    }
+    .contato p{
+        font-size: 25px;
+    }
 }
