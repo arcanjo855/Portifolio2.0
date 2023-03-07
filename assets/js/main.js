@@ -36,18 +36,18 @@ window.addEventListener("scroll",()=>{
 
 
 
-const classeTema = document.querySelectorAll('.trocar-bg')
+const classeTema = document.querySelectorAll('.trocar-fundo')
 
 const trocarTemaClaro = () =>{
     classeTema.forEach((element) =>{
-      element.classList.toggle('claro-bg')
+      element.classList.toggle('fundo-claro')
     })
 
 }
 
 const trocarTemaEscuro = () =>{
   classeTema.forEach((element)=>{
-    element.classList.toggle('escuro-bg')
+    element.classList.toggle('fundo-escuro')
   })
 }
 
@@ -68,14 +68,15 @@ const inserirTextoHabilidades = (id,description) =>{
     })
 
     icon.addEventListener("mouseout",function(){
-        descricao.innerHTML = "<p>/* Passe o mouse por cima de alguma habilidade para ler a descrição */</p>"
+        descricao.innerHTML = "<p>/* Passe o mouse por cima de alguma habilidade para ler a descrição >.< */</p>"
     })
 
 
 }
 
-inserirTextoHabilidades("html-icon", "<p></p><p>HTML</p> <br> <p>É uma linguagem de marcação utilizada na construção de páginas na Web.</p> <br> <p></p></p>")
-inserirTextoHabilidades("css-icon", "<p></p><p>CSS</p> <br> <p>É um mecanismo para adicionar estilo a um documento web.</p> <br> <p></p></p>")
-inserirTextoHabilidades("javascript-icon", "<p></p><p>JavaScript</p> <br> <p>É uma linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da web.</p> <br> <p></p></p>")
-inserirTextoHabilidades("git-icon", "<p></p><p>Git</p> <br> <p>É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software.</p> <br> <p></p></p>")
-inserirTextoHabilidades("github-icon", "<p></p><p>Github</p> <br> <p>É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. </p> <br> <p></p></p>")
+inserirTextoHabilidades("html-icon", "<h3>HTML</h3> <br> <p>É uma linguagem de marcação utilizada na construção de páginas na Web.</p> <br> <p></p></p>")
+inserirTextoHabilidades("css-icon", "<h3>CSS</h3> <br> <p>É um mecanismo para adicionar estilo a um documento web.</p> <br> <p></p></p>")
+inserirTextoHabilidades("javascript-icon", "<h3>JavaScript</h3> <br> <p>É uma linguagem de programação. Juntamente com HTML e CSS, é uma das três principais tecnologias da web.</p> <br> <p></p></p>")
+inserirTextoHabilidades("git-icon", "<h3>Git</h3> <br> <p>É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software.</p> <br> <p></p></p>")
+inserirTextoHabilidades("github-icon", "<h3>Github</h3> <br> <p>É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. </p> <br> <p></p></p>")
+inserirTextoHabilidades("nodejs-icon", "<h3>NodeJs</h3> <br> <p>Node.js é um software de código aberto, multiplataforma, baseado no interpretador V8 do Google e que permite a execução de códigos JavaScript fora de um navegador web. </p> <br> <p></p></p>")
